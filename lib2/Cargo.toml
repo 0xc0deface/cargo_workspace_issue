@@ -1,0 +1,18 @@
+[package]
+name = "lib2"
+version = "0.1.0"
+authors = ["Some Guy <someguy@gmail.com>" ]
+edition = "2018"
+publish = false
+
+[dependencies]
+sqlite = { version="0.25.3", default-features = false }
+
+# without this it will build but not test
+[dev-dependencies]
+sqlite = { version="0.25.3", default-features = true }
+
+[features]
+default = []
+linkage = ["sqlite/linkage"]
+

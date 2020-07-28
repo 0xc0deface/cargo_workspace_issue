@@ -1,0 +1,10 @@
+[package]
+name = "lib1"
+version = "0.1.0"
+authors = ["Some Guy <someguy@gmail.com>" ]
+edition = "2018"
+publish = false
+
+[dependencies]
+lib2 = { path="../lib2", default-features = false }
+diesel = { version = "1.4.5", features = ["sqlite", "chrono"] }

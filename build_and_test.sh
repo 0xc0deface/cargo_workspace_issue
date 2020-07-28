@@ -1,0 +1,1 @@
+cargo build --package lib1 && cargo build --package lib2 && cargo test --package lib1 && cargo test --package lib2
